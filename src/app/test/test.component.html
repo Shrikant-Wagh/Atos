@@ -18,10 +18,49 @@ City :<input [(ngModel)]="city" type="text"><br><br>
 
 Country :<input [(ngModel)]="country" type="text"><br><br>
 
-
+<button (click)="changeColor()"> Click Me </button><br>
+<div [ngStyle]="mycolor">
 <b>Name :{{name}}</b><br>
 <b>Email :{{email}}</b><br>
     <b>Password :{{pass}}</b><br>
         <b>City :{{city}}</b><br>
             <b>Country :{{country}}</b><br>
+
+            </div>
 </div>
+
+
+<p>-------------------------------------------------------------</p>
+<h2> Radio Button Example</h2>
+
+
+<input type="radio" (click)="displayText($event)">press to see the Text
+<p [hidden]="isTextdisplay">Hi.. I am Radio Button</p>
+
+
+
+<p>-------------------------------------------------------------</p>
+
+
+<h2>Display the input boxs</h2>
+<br>
+<button (click)="displayInputBox()">Click Here  to Display input boxs</button>
+<br><br>
+<input type="text" [hidden]="isTxtdisp2">
+<br><br>
+<input type="text" [hidden]="isTxtdisp2">
+<br><br>
+<input type="text" [hidden]="isTxtdisp2">
+
+
+<p>-------------------------------------------------------------</p>
+
+
+
+
+<div *ngFor="let color of colors">
+
+    <h2> {{color}} </h2>
+
+    
+    </div>
