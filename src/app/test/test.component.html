@@ -1,1 +1,27 @@
-<p>test works!</p>
+<p>Test works!</p>
+
+<div>
+
+
+<input id="getTx" type="text"><br>
+ 
+<button (click)="onClickMe()"> Click Me </button><br>
+<p>{{clickMessage}}</p>
+<p>-------------------------------------------------------------</p>    
+Name : <input [(ngModel)]="name" type="text"><br><br>
+  
+Email : <input [(ngModel)]="email" type="text"><br><br>
+
+Password : <input [(ngModel)]="pass" type="password"><br><br>
+
+City :<input [(ngModel)]="city" type="text"><br><br>
+
+Country :<input [(ngModel)]="country" type="text"><br><br>
+
+
+<b>Name :{{name}}</b><br>
+<b>Email :{{email}}</b><br>
+    <b>Password :{{pass}}</b><br>
+        <b>City :{{city}}</b><br>
+            <b>Country :{{country}}</b><br>
+</div>

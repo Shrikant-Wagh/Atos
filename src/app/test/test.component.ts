@@ -3,20 +3,16 @@ import { strict } from 'assert';
 
 @Component({
   selector: 'app-test',
-  template: `
-  
-  
-  <input id="getTx" type="text"><br>
- 
-  <button (click)="onClickMe()"> Click Me </button><br>
-  <p>{{clickMessage}}</p>
- 
-  `
+  templateUrl: 'test.component.html'
 })
 export class TestComponent implements OnInit {
 
   clickMessage ='';
-  value='';
+  public name='';
+  public email='';
+  public city='';
+  public pass='';
+  public country='';
 
   
   onClickMe()
